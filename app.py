@@ -6,7 +6,7 @@ from generation import generate
 import numpy as np
 import io
 import zipfile
-import cv2
+
 
 
 st.set_page_config(page_title="CREATIVE AI", layout="wide")
