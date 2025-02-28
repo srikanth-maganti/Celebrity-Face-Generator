@@ -16,7 +16,7 @@ This app uses a Generative Adversarial Network (GAN) to create synthetic images.
 """)
 
 
-num_images = st.slider("Number of Images", 1, 16, 4)
+num_images = st.slider("Number of Images", 2, 16, 4)
 
 
 def ndarray_to_image(ndarr):
@@ -42,9 +42,9 @@ if st.button("Generate Images"):
                 img = img.transpose(1, 2, 0) 
                 img = (img - img.min()) / (img.max() - img.min())
                 pil_image = ndarray_to_image(img)
-                enhance_img = pil_image.resize((128,128),Image.BICUBIC)
+                enhance_img = pil_image.resize((100,100),Image.BICUBIC)
                 enhancer = ImageEnhance.Contrast(enhance_img)
-                enhanced_img = enhancer.enhance(1.5)
+                enhanced_img = enhancer.enhance(2.0)
                 axs[img_idx].imshow(enhanced_img)
                 axs[img_idx].set_title(f"Image {img_idx+1}")
                 axs[img_idx].axis("off")
