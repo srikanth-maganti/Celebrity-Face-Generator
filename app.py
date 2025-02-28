@@ -1,10 +1,12 @@
 import streamlit as st
-from PIL import Image
+from PIL import Image,ImageEnhance
+from torchvision import transforms
 import matplotlib.pyplot as plt
 from generation import generate
 import numpy as np
 import io
 import zipfile
+import cv2
 
 
 st.set_page_config(page_title="CREATIVE AI", layout="wide")
@@ -13,9 +15,8 @@ st.markdown("""
 This app uses a Generative Adversarial Network (GAN) to create synthetic images.
 """)
 
-# Sidebar
-st.sidebar.header("Model Parameters")
-num_images = st.sidebar.slider("Number of Images", 1, 16, 4)
+
+num_images = st.slider("Number of Images", 1, 16, 4)
 
 
 def ndarray_to_image(ndarr):
@@ -39,8 +40,12 @@ if st.button("Generate Images"):
         for img_idx, img in enumerate(gen_images):
             if img_idx < len(axs):
                 img = img.transpose(1, 2, 0) 
-                img = (img - img.min()) / (img.max() - img.min()) 
-                axs[img_idx].imshow(img)
+                img = (img - img.min()) / (img.max() - img.min())
+                pil_image = ndarray_to_image(img)
+                enhance_img = pil_image.resize((128,128),Image.BICUBIC)
+                enhancer = ImageEnhance.Contrast(enhance_img)
+                enhanced_img = enhancer.enhance(1.5)
+                axs[img_idx].imshow(enhanced_img)
                 axs[img_idx].set_title(f"Image {img_idx+1}")
                 axs[img_idx].axis("off")
         
