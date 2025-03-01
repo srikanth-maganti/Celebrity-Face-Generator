@@ -15,15 +15,20 @@ A deep learning-based application that generates celebrity faces using  Generati
 ---
 
 ## 🔍 Overview  
-The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a trained deep learning model to generate high-quality images.  
+The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a trained deep learning model to generate high-quality images.
+- **Presentation** (https://slidesgpt.com/l/BD3i)
 
 ---
-<span style="color:red">Due to the large size of our dataset, GitHub does not support direct uploads. Instead, we have provided a download link along with setup instructions. Please follow the steps below to access and use the dataset efficiently.</span>
+> **Note:** Due to the large size of our dataset, GitHub does not support direct uploads. Instead, we have provided a download link along with setup instructions. Please follow the steps below to access and use the dataset efficiently.
+
 ## 📂 Dataset Information  
 - The model is trained on **[CelebA]** (https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
 - Download dataset from above link.
 - It will be downloaded in ZIP format,Extract it.
 - Move the folder img_align_celeba to project directory.
+
+
+
   
 
 
@@ -128,8 +133,8 @@ git push -u origin main
 ---
 
 ## Contact Details
-Email:magantisrikanth45@gmail.com
-Phone:9951720674
+- Email:magantisrikanth45@gmail.com
+- Phone:9951720674
 
 
 
