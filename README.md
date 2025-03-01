@@ -3,14 +3,14 @@
 A deep learning-based application that generates celebrity faces using  Generative Adversarial Network. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
 
 ## 📌 Table of Contents  
-- [Overview](#-overview)  
+- [Overview](#-overview)
+- [Dataset Information](#-dataset-information) 
 - [Setup & Installation](#-setup--installation)  
 - [Usage Instructions](#-usage-instructions)  
 - [Deployment Process](#-deployment-process)  
-- [Dataset Information](#-dataset-information)  
 - [Project Submission Requirements](#-project-submission-requirements)  
-- [Contributors](#-contributors)  
-
+- [Contributors](#-contributors)
+- [Contact Details](#-contact) 
 
 ---
 
@@ -19,6 +19,14 @@ The *Celebrity Face Generator* is an AI-powered application that creates synthet
 
 ---
 
+## 📂 Dataset Information  
+- The model is trained on **[CelebA]** (https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
+- Download dataset from above link.
+- It will be downloaded in ZIP format,Extract it.
+- Move the folder img_align_celeba to project directory.
+
+
+---
 ## ⚙ Setup & Installation  
 
 ### ➡ Clone the Repository  
@@ -90,20 +98,15 @@ git push -u origin main
 
 ---
 
-## 📂 Dataset Information  
-- The model is trained on **[CelebA]** (https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
--Download dataset from above link
--It will be downloaded in ZIP format,Extract it
--Move the folder img_align_celeba to project directory
-
-
----
 
 
 
-## 👨‍💻 Contributors  
-- **Your Name** - [GitHub Profile](#)
-- [Add more contributors if applicable]
+
+## 👨‍💻 Contributors 
+### Team ReLU
+- **Srikanth Maganti** - [GitHub Profil](https://github.com/srikanth-maganti)
+- **Veneeth Batchu**   -[GitHub Profile](https://github.com/IAMVENEETH)
+- **Chaitanya Kallepalli** -[GitHub Profile]()
 
 ---
 
@@ -113,8 +116,8 @@ git push -u origin main
 ## 📢 Additional Notes  
 - This project follows the hackathon guidelines for proper conduct, project submission, and deployment documentation.
 - Judges can interact with the model through the publicly accessible Streamlit app.
-- If any external libraries are used beyond `requirements.txt`, please document them.
 
 ---
 
-🚀 **Happy Coding & Good Luck!** 🎉
+
+
