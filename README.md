@@ -1,6 +1,6 @@
 # 🎭 Celebrity Face Generator  
 
-A deep learning-based application that generates celebrity faces using a trained model. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
+A deep learning-based application that generates celebrity faces using  Generative Adversarial Network. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
 
 ## 📌 Table of Contents  
 - [Overview](#-overview)  
@@ -10,12 +10,12 @@ A deep learning-based application that generates celebrity faces using a trained
 - [Dataset Information](#-dataset-information)  
 - [Project Submission Requirements](#-project-submission-requirements)  
 - [Contributors](#-contributors)  
-- [License](#-license)  
+
 
 ---
 
 ## 🔍 Overview  
-The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a pre-trained deep learning model to generate high-quality images.  
+The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a trained deep learning model to generate high-quality images.  
 
 ---
 
@@ -23,14 +23,14 @@ The *Celebrity Face Generator* is an AI-powered application that creates synthet
 
 ### ➡ Clone the Repository  
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/srikanth-maganti/Celebrity-Face-Generator.git
 cd celebrity-face-generator
 ```
 
 ### ✅ Create a Virtual Environment (Optional but Recommended)  
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create -n <env_name> python=3.12
+conda activate <env_name>
 ```
 
 ### 💾 Install Dependencies  
@@ -47,8 +47,8 @@ streamlit run app.py
 
 ## 🚀 Usage Instructions  
 1. Open the deployed Streamlit app in your browser.
-2. Click on the **Generate Face** button to create a synthetic celebrity face.
-3. Adjust model parameters if applicable.
+2. Select No of Images you want to generate
+3. Click on the **Generate Face** button to create a synthetic celebrity face.
 4. Download or save the generated image.
 
 ---
@@ -57,7 +57,7 @@ streamlit run app.py
 
 ### Step 1: Train and Save the Model  
 - Train the model on the dataset.
-- Save it as a `.h5` or `.pkl` file in the project directory.
+- Save it as a `.pth`  file in the project directory.
 
 ### Step 2: Create a Streamlit App  
 - The main application logic is in `app.py`.
@@ -91,25 +91,15 @@ git push -u origin main
 ---
 
 ## 📂 Dataset Information  
-- The model is trained on **[dataset name]** (mention source).
-- **Preprocessing steps:** [Mention if applicable]
+- The model is trained on **[CelebA]** (https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
+-Download dataset from above link
+-It will be downloaded in ZIP format,Extract it
+-Move the folder img_align_celeba to project directory
+
 
 ---
 
-## 📆 Project Submission Requirements  
-To meet the hackathon submission criteria, ensure that your GitHub repository contains:
 
-- ✅ All code files
-- ✅ Dataset(s) (Train and Test sets if applicable)
-- ✅ Notebook file with proper code
-- ✅ `README.md` (This document, with setup, usage instructions, and all necessary details)
-
-Additionally, if required, submit a ZIP file containing:
-- ✅ All code files
-- ✅ Notebook file
-- ✅ `README.md`
-
----
 
 ## 👨‍💻 Contributors  
 - **Your Name** - [GitHub Profile](#)
@@ -117,8 +107,6 @@ Additionally, if required, submit a ZIP file containing:
 
 ---
 
-## 📚 License  
-This project is licensed under the **MIT License**.
 
 ---
 
