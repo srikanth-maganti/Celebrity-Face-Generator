@@ -1,5 +1,5 @@
 # 🎭 Celebrity Face Generator by Team ReLU
-**Project Link**(https://celebrity-face-generator-by-team-relu.streamlit.app/).
+**Project Link** (https://celebrity-face-generator-by-team-relu.streamlit.app/)
 - A deep learning-based application that generates celebrity faces using  Generative Adversarial Network. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
 
 ## 📌 Table of Contents  
