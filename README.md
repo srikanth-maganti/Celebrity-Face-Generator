@@ -1,5 +1,5 @@
 # 🎭 Celebrity Face Generator by Team ReLU
-
+**Project Link**(https://celebrity-face-generator-by-team-relu.streamlit.app/)
 A deep learning-based application that generates celebrity faces using  Generative Adversarial Network. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
 
 ## 📌 Table of Contents  
@@ -17,6 +17,7 @@ A deep learning-based application that generates celebrity faces using  Generati
 ## 🔍 Overview  
 The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a trained deep learning model to generate high-quality images.
 - **Presentation** (https://slidesgpt.com/l/BD3i)
+
 
 ---
 > **Note:** Due to the large size of our dataset, GitHub does not support direct uploads. Instead, we have provided a download link along with setup instructions. Please follow the steps below to access and use the dataset efficiently.
