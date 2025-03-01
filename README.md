@@ -1,4 +1,4 @@
-# 🎭 Celebrity Face Generator  
+# 🎭 Celebrity Face Generator by Team ReLU
 
 A deep learning-based application that generates celebrity faces using  Generative Adversarial Network. The project is built using *Streamlit* and deployed on *Streamlit Cloud*.
 
@@ -18,12 +18,13 @@ A deep learning-based application that generates celebrity faces using  Generati
 The *Celebrity Face Generator* is an AI-powered application that creates synthetic celebrity-like faces. It utilizes a trained deep learning model to generate high-quality images.  
 
 ---
-
+<span style="color:red">Due to the large size of our dataset, GitHub does not support direct uploads. Instead, we have provided a download link along with setup instructions. Please follow the steps below to access and use the dataset efficiently.</span>
 ## 📂 Dataset Information  
 - The model is trained on **[CelebA]** (https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
 - Download dataset from above link.
 - It will be downloaded in ZIP format,Extract it.
 - Move the folder img_align_celeba to project directory.
+  
 
 
 ---
@@ -39,11 +40,18 @@ cd celebrity-face-generator
 ```bash
 conda create -n <env_name> python=3.12
 conda activate <env_name>
+
+or
+
+pip install virtualenv
+python -m venv myenv
+myenv\Scripts\activate [windows]
+source myenv/bin/activate [linux/mac]
 ```
 
 ### 💾 Install Dependencies  
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 ### 🌐 Run the Application  
@@ -104,9 +112,9 @@ git push -u origin main
 
 ## 👨‍💻 Contributors 
 ### Team ReLU
-- **Srikanth Maganti** - [GitHub Profil](https://github.com/srikanth-maganti)
+- **Srikanth Maganti** - [GitHub Profile](https://github.com/srikanth-maganti)
 - **Veneeth Batchu**   -[GitHub Profile](https://github.com/IAMVENEETH)
-- **Chaitanya Kallepalli** -[GitHub Profile]()
+- **Chaitanya Kallepalli** -[GitHub Profile](https://github.com/Chaitanya179)
 
 ---
 
@@ -118,6 +126,10 @@ git push -u origin main
 - Judges can interact with the model through the publicly accessible Streamlit app.
 
 ---
+
+## Contact Details
+Email:magantisrikanth45@gmail.com
+Phone:9951720674
 
 
 
